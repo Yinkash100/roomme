@@ -295,7 +295,7 @@
   font-size: 36px;
   font-weight: bold;
   line-height: 150%;
-  color: #0B73B4;
+  color: #333333;
 }
 @media (max-width: 765px) {
   .hero__text {
@@ -452,6 +452,10 @@
 .section-value .value__item--right {
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
+}
+
+.u-color-secondary {
+  color: #0B73B4;
 }
 
 *,
