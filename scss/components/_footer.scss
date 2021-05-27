@@ -10,6 +10,9 @@
     line-height: 150%;
     font-weight: bold;
     color: $color-secondary;
+    @include respond(tab-land){
+      font-size: 24px;
+    }
   }
   &__social {
     margin: 40px 0 20px;

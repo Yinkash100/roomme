@@ -12,14 +12,23 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    margin-left: 30px;
-
+    margin-left: 60px;
+    @include respond(tab-land){
+      margin-left: 20px;
+      width: 100%;
+    }
+    @include respond(smart-phone){
+      margin-left: 10px;
+    }
   }
   &__text {
     font-size: 36px;
     font-weight: bold;
     line-height: 150%;
     color: $color-secondary;
+    @include  respond(tab-land){
+      font-size: 24px;
+    }
     &--head {
       font-size: 16px;
       color: $color-text;
@@ -27,14 +36,22 @@
         height: 50px;
         &:not(:last-child){
           margin-right: 24px;
+          @include respond(tab-port){
+            margin-right: 10px;
+          }
         }
       }
     }
   }
   &-image {
     width: 50%;
+    overflow-x: hidden;
+
+    @include respond(tab-land){
+      display: none;
+    }
     img {
-      height: 100%;
+      width: 100%;
     }
   }
 }
@@ -46,19 +63,47 @@
       color: $color-secondary;
       text-align: center;
       margin-bottom: 40px;
+      @include  respond(tab-land){
+        font-size: 24px;
+      }
     }
     &__body {
+      text-align: center;
+      &--head {
+        margin-bottom: 14px;
+      }
+    }
+    &__members {
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
     }
     &__member {
       width: 220px;
+      min-width: 220px;
       border: 1px solid $color-grey-bg;
+      margin: 2rem;
+      border-radius: 15px;
       &--image {
         height: 250px;
         img {
+          border-top-left-radius: 15px;
+          border-top-right-radius: 15px;
           height: 100%;
           width: 100%;
+        }
+      }
+      &--info {
+        font-size: 16px;
+        text-align: center;
+        margin: 15px;
+        .name {
+          font-weight: bold;
+          font-size: 18px
+        }
+        .position {
+          color: $color-primary;
+          font-style: italic;
         }
       }
     }
@@ -77,13 +122,14 @@
     line-height: 150%;
     margin: 2rem 0;
     color: $color-secondary;
+    @include  respond(tab-land){
+      font-size: 24px;
+    }
   }
   &__form {
     margin: 0 auto;
-    width: 100%;
-    @include respond(desktop){
-      max-width: 600px;
-    }
+    width: 80%;
+    max-width: 600px;
     input {
       width: 100%;
     }
@@ -95,7 +141,7 @@
   }
 }
 .section-value{
-  padding: 60px 15px;
+  padding: 60px 0;
   .value {
     &-head {
       font-size: 36px;
@@ -103,6 +149,9 @@
       color: $color-secondary;
       text-align: center;
       margin-bottom: 40px;
+      @include  respond(tab-land){
+        font-size: 24px;
+      }
     }
     &__item{
       display: block;
@@ -111,6 +160,7 @@
       font-size: 16px;
       max-width: 600px;
       border: 1px solid $color-grey-bg;
+      width: 80%;
       &--left {
         margin-left: auto;
         border-top-left-radius: 25px;

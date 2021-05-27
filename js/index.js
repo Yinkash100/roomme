@@ -5,6 +5,7 @@ window.onload = ()=> {
 
 
   $('#menu-toggler').on('click', ()=>{
+    console.log('nav-menu-called')
     toggleNavMenu();
   })
 
