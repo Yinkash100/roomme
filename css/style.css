@@ -269,6 +269,7 @@
   display: flex;
   flex-wrap: nowrap;
   height: 85vh;
+  background-color: #D8CDD5;
 }
 .hero-contents {
   width: 50%;
@@ -360,18 +361,19 @@
 }
 .section-team .team__member--image {
   width: 220px;
-  min-width: 220px;
-  max-width: 220px;
+  height: 250px;
 }
 .section-team .team__member--image img {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   width: 100%;
+  overflow-y: hidden;
 }
 .section-team .team__member--info {
   font-size: 16px;
   text-align: center;
   margin: 15px;
+  background-color: #ffffff;
 }
 .section-team .team__member--info .name {
   font-weight: bold;

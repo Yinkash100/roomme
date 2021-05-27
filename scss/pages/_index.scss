@@ -3,7 +3,7 @@
   display: flex;
   flex-wrap: nowrap;
   height: 85vh;
-
+  background-color: #D8CDD5;
   &-contents{
     width: 50%;
   }
@@ -84,18 +84,19 @@
       border-radius: 15px;
       &--image {
         width: 220px;
-        min-width: 220px;
-        max-width: 220px;
+        height: 250px;
         img {
           border-top-left-radius: 15px;
           border-top-right-radius: 15px;
           width: 100%;
+          overflow-y: hidden;
         }
       }
       &--info {
         font-size: 16px;
         text-align: center;
         margin: 15px;
+        background-color: $color-white;
         .name {
           font-weight: bold;
           font-size: 18px
