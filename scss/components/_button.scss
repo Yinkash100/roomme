@@ -1,0 +1,23 @@
+.btn{
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  font-size: 14px;
+  display: inline-block;
+  position: relative;
+  outline: none;
+  white-space: nowrap;
+  &:hover {
+    cursor: pointer;
+  }
+  &:after {
+    outline: none;
+  }
+  img {
+    height: 1rem;
+  }
+}
+.btn-primary {
+  color: $color-white;
+  background-color: $color-primary;
+}

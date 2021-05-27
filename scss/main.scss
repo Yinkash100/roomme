@@ -1,0 +1,45 @@
+@import "abstract/variables";
+@import "abstract/mixins";
+
+@import "base/animations";
+@import "base/utilities";
+
+@import "components/button";
+@import "components/nav";
+@import "components/form";
+@import "components/footer";
+
+@import "pages/index";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+html{
+}
+
+body{
+  margin: 0 auto;
+  font-family: 'DM Sans', sans-serif;
+  scroll-behavior: smooth;
+  line-height: 1.5;
+  font-size: 14px;
+  color: $color-text;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  color: $color-primary;
+}
+
+li{
+  list-style-type: none;
+}
+

@@ -1,0 +1,63 @@
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  &-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 22;
+    background-color: $color-white;
+    padding: 24px 40px;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.13);
+    @include respond(smart-phone){
+      padding: 12px 20px;
+    }
+  }
+  &__buttons {
+    display: none;
+    @include respond(tab-land) {
+      display: block;
+    }
+  }
+  &__logo {
+    img {
+      width: 125px;
+      height: 35px;
+    }
+  }
+  &__list {
+    @include respond(tab-land){
+      display: none;
+    }
+    &--item {
+      display: inline-block;
+      padding: 0 2rem;
+      color: $color-secondary;
+    }
+  }
+  &__outer.hide-nav {
+    display: none;
+  }
+  &__outer {
+    display: none;
+    background-color: $color-white;
+    @include respond(tab-land){
+      display: block;
+      animation: inFromTop 0.1s ease-in;
+    }
+    .nav__list {
+      display: block;
+      text-align: center;
+      margin: 2rem 0 1rem;
+      justify-content: center;
+    }
+    .nav__list--item {
+      margin: 60px 0;
+      font-size: 24px;
+      display: block;
+    }
+  }
+}
