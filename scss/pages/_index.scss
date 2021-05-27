@@ -79,17 +79,16 @@
       flex-wrap: wrap;
     }
     &__member {
-      width: 220px;
-      min-width: 220px;
       border: 1px solid $color-grey-bg;
       margin: 2rem;
       border-radius: 15px;
       &--image {
-        height: 250px;
+        width: 220px;
+        min-width: 220px;
+        max-width: 220px;
         img {
           border-top-left-radius: 15px;
           border-top-right-radius: 15px;
-          height: 100%;
           width: 100%;
         }
       }
@@ -161,6 +160,8 @@
       max-width: 600px;
       border: 1px solid $color-grey-bg;
       width: 80%;
+      font-weight: 500;
+      font-size: 22px;
       &--left {
         margin-left: auto;
         border-top-left-radius: 25px;
