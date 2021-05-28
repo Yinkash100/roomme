@@ -3,7 +3,15 @@
   display: flex;
   flex-wrap: nowrap;
   height: 85vh;
-  background-color: #D8CDD5;
+  background: url('../assets/icons/hero-bg.png') left top no-repeat,
+  url('../assets/icons/hero-bg2.png')  right bottom no-repeat;
+  background-size: 25% 50%;
+  @include respond(tab-land){
+    background-size: 40% 50%;
+  }
+  &-container {
+    background-color: $color-hero-bg;
+  }
   &-contents{
     width: 50%;
   }
@@ -46,12 +54,13 @@
   &-image {
     width: 50%;
     overflow-x: hidden;
-
+    text-align: center;
     @include respond(tab-land){
       display: none;
     }
     img {
-      width: 100%;
+      margin-top: 10%;
+      height: 80%;
     }
   }
 }
@@ -89,6 +98,7 @@
           border-top-left-radius: 15px;
           border-top-right-radius: 15px;
           width: 100%;
+          max-height: 100%;
           overflow-y: hidden;
         }
       }
@@ -142,11 +152,12 @@
 }
 .section-value{
   padding: 60px 0;
+  background: $color-value-bg;
   .value {
     &-head {
       font-size: 36px;
       font-weight: bold;
-      color: $color-secondary;
+      color: $color-white;
       text-align: center;
       margin-bottom: 40px;
       @include  respond(tab-land){
@@ -154,8 +165,10 @@
       }
     }
     &__item{
-      display: block;
-      margin: 20px 0;
+      background: $color-hero-bg;
+      display: flex;
+      flex-wrap: nowrap;
+      margin: 20px auto;
       padding: 24px;
       font-size: 16px;
       max-width: 600px;
@@ -163,19 +176,64 @@
       width: 80%;
       font-weight: 500;
       font-size: 22px;
-      &--left {
-        margin-left: auto;
-        border-top-left-radius: 25px;
-        border-bottom-left-radius: 25px;
+      border-radius: 25px;
+      max-width: 600px;
+      @include respond(smart-phone){
+        width: 90%;
+        font-size: 16px;
       }
-      &--right {
-        border-top-right-radius: 25px;
-        border-bottom-right-radius: 25px;
+      &--count {
+        background: $color-secondary;
+        color: $color-white;
+        min-width: 40px;
+        min-height: 40px;
+        max-height: 40px;
+        border-radius: 50%;
+        line-height: 20px;
+        margin-right: 2rem;
+        position: relative;
+        &-item {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
       }
     }
 
   }
 }
+.section-value2{
+  margin: 40px 0 60px;
+  border-bottom: 1px solid $color-value-bg;
+  .value2{
+    margin: 40px auto;
+    max-width: 750px;
+    width: 90%;
+    &-head {
+      font-size: 36px;
+      font-weight: bold;
+      color: $color-secondary;
+      text-align: center;
+      padding: 20px 0;
+      @include  respond(tab-land){
+        font-size: 24px;
+      }
+    }
+    &-body {
+      text-align: justify;
+      font-size: 24px;
+      color: $color-text;
+      padding: 20px 0;
+    }
+  }
+}
 .u-color-secondary {
-  color: $color-secondary
+  color: $color-secondary;
+}
+.u-color-primary {
+  color: $color-primary;
+}
+.u-color-white {
+  color: $color-white;
 }
