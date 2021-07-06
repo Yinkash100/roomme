@@ -3,6 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="5c574de7-9942-4d98-b0bb-441a62a5bf6a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/AY.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Abisuwa.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Richard.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/gbogboade.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/preye.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/shalom.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/yinka.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/yinka.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/pages/_index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/pages/_index.scss" afterDir="false" />
@@ -66,7 +73,10 @@
       <workItem from="1622184447677" duration="301000" />
       <workItem from="1622203601951" duration="5683000" />
       <workItem from="1622210971811" duration="131000" />
-      <workItem from="1622214984682" duration="189000" />
+      <workItem from="1622214984682" duration="335000" />
+      <workItem from="1622488737535" duration="641000" />
+      <workItem from="1622528176916" duration="520000" />
+      <workItem from="1625600842652" duration="1829000" />
     </task>
     <servers />
   </component>
